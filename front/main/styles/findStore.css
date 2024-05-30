@@ -1,0 +1,146 @@
+main {
+    display: flex;
+    flex-direction: row;
+    width: 100dvw;
+    height: 740px;
+    overflow: hidden;
+}
+
+.left-side {
+    height: 743px;
+}
+
+.upper {
+    width: 630px;
+    height: max-content;
+    padding-left: 50px;
+    margin-top: 20px;
+}
+
+.upper h1 {
+    font-size: 24px;
+}
+
+.search {
+    margin: 34px 0;
+    width: 550px;
+    height: 56px;
+    outline: none;
+    border: 1px solid #aaa;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+}
+
+.search input {
+    width: 470px;
+    height: 100%;
+    outline: none;
+    border: none;
+    color: #aaa;
+    font-size: 20px;
+}
+
+.search input::placeholder {
+    color: #aaa;
+    font-size: 20px;
+}
+
+.search img {
+    margin: 0 15px;
+}
+
+.center {
+    width: 730px;
+    height: 540px;
+    border-top: 1px solid #aaa;
+    border-bottom: 1px solid #aaa;
+    overflow-y: auto;
+}
+
+.lower {
+    margin-top: 10px;
+    margin-left: 20px;
+    font-size: 12px;
+    text-decoration: underline;
+}
+
+.location {
+    border-bottom: 1px solid #e5e5e5;
+    height: 175px;
+    display: flex;
+    align-items: center;
+    transition: background-color, color 0.5s ease;
+}
+
+.location:last-child {
+    border: none;
+}
+
+.text {
+    padding-left: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+.text span {
+    color: #aaa;
+    margin-top: 12px;
+}
+
+.text span:first-child {
+    color: #111111 !important;
+    margin-top: 0;
+}
+
+.map {
+    width: 1186px;
+    height: 750px;
+    overflow: hidden;
+}
+
+iframe {
+    outline: none;
+    border: none;
+    width: 100%;
+    height: 99%;
+}
+
+#selected,
+#selected .text,
+#selected .text span {
+    background-color: #eeeeee;
+    color: #757575;
+}
+
+@media (max-width: 430px) {
+    .map {
+        display: none;
+    }
+
+    .upper h1 {
+        width: max-content;
+    }
+
+    .upper .search {
+        width: 330px;
+    }
+
+    .center {
+        height: max-content;
+    }
+
+    main {
+        overflow-y: visible;
+        height: max-content;
+    }
+
+    .left-side {
+        height: max-content;
+    }
+
+    footer {
+        margin-top: 20px;
+    }
+
+}

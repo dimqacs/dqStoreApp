@@ -1,0 +1,259 @@
+main {
+    margin: 30px 0 0 88px;
+    width: 100%;
+    align-items: flex-start;
+}
+
+.main-header {
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.main-header h1{
+    font-size: 28px;
+}
+
+.main-header .pages {
+    margin-left: 550px;
+}
+
+.main-header .pages a{
+    margin-right: 35px;
+}
+
+.main-header .pages a:last-child{
+    margin-right: 0;
+}
+
+.current {
+    color: #aaaaaa;
+}
+
+.favourite-products {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.product img {
+    width: 580px;
+    height: 580px;
+    object-fit: cover;
+}
+
+.product {
+    margin-bottom: 25px;
+}
+
+.lower {
+    display: flex;
+    flex-direction: column;
+}
+
+.top {
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.lower span {
+    margin: 10px 0 20px;
+    color: #aaaaaa;
+}
+
+.lower button {
+    width: 25%;
+    height: 40px;
+    border-radius: 40px;
+    outline: none;
+    border: 2px solid #aaaaaa;
+}
+
+#empty {
+    width: 100%;
+    font-size: 18px;
+    margin: 100px 0 200px 700px;
+}
+
+.also {
+    width: 1803px;
+}
+
+.also-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.also-header h1 {
+    font-size: 28px;
+}
+
+#back img{
+    transform: rotate(90deg);
+    background-color: transparent;
+}
+
+#next img{
+    transform: rotate(-90deg);
+    background-color: transparent;
+}
+
+.also-header .buttons button {
+    width: 42px;
+    height: 42px;
+    border-radius: 40px;
+    background-color: #e5e5e5;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+#back {
+    margin-right: 3px;
+}
+
+.also .products {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.also .products div {
+    width: 32%;
+    height: max-content;
+}
+
+.also .products div img{
+    width: 100%;
+    cursor: pointer;
+}
+
+.also .products .product {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.also .products .product h6{
+    margin-top: 15px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.also .products .product span{
+    margin-top: 10px;
+    color: #aaaaaa;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.finish {
+    background-color: #f5f5f5 !important;
+}
+
+@media (max-width: 430px) {
+
+    main {
+        margin-left: 0;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .main-header {
+        margin-bottom: 0;
+        flex-direction: column-reverse;
+        width: max-content;
+    }
+
+    .main-header .pages a {
+        margin-right: 20px;
+    }
+
+    .main-header .pages {
+        margin-left: 0;
+        width: 100%;
+    }
+
+    .main-header {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .main-header h1 {
+        margin: 20px 0;
+    }
+
+    .main-header .pages a:last-child {
+        margin-right: 0;
+    }
+
+    .favourite-products {
+        grid-template-columns: repeat(1, 1fr);
+        width: 430px;
+    }
+
+    .favourite-products .product, .favourite-products .product img{
+        width: 100dvw;
+    }
+
+    .lower {
+        width: 406px;
+        margin-left: 12px;
+    }
+
+    .also-header .buttons {
+        display: none !important;
+    }
+
+    .products::-webkit-scrollbar {
+        height: 8px;
+    }
+
+    .also {
+        width: 430px;
+        margin-top: 30px;
+    }
+
+    .also-header {
+        width: 380px;
+        margin-left: 20px;
+    }
+
+    .products .product h6, .products .product span {
+        font-size: 16px;
+    }
+
+    .products .product:first-of-type {
+        margin-left: 5px;
+    }
+
+    .products .product img {
+        width: 300px !important;
+        height: 300px;
+        object-fit: cover;
+    }
+
+    .products {
+        width: 100dvw;
+        overflow-x: auto;
+    }
+
+    .products .product {
+        margin-right: 200px;
+    }
+
+    .products .product:last-of-type {
+        margin-right: 0;
+    }
+
+    #empty {
+        width: max-content;
+        margin: 0;
+        font-size: 16px;
+        margin: 50px 0 50px 30px;
+    }
+}

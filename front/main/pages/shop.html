@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Official Website of DQ Company">
+    <meta name="keywords" content="Shopping, Sport, DQ, Online">
+    <meta name="author" content="Dzîc Dmitrii">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop Best Products</title>
+    <link rel="icon" type="image/x-icon" href="../resources/images/dq_Logo.ico">
+    <link rel="stylesheet" href="../styles/default.css">
+    <link rel="stylesheet" href="../styles/header_footer.css">
+    <link rel="stylesheet" href="../styles/shop.css">
+</head>
+
+<body>
+    <header>
+        <div class="infoPanel">
+            <ul>
+                <li><a href="findStore.html">Find a Store</a></li>
+                <li><a href="working.html">Help</a></li>
+                <li><a href="logIn.html">Log In</a></li>
+                <li><a href="signUp.html">Sign Up</a></li>
+            </ul>
+        </div>
+        <div class="menu">
+            <div class="content">
+                <img src="../resources/images/dq_logo.png" alt="DQ Logo" id="DQLogo">
+                <ul>
+                    <li><a href="#">Men</a></li>
+                    <li><a href="#">Women</a></li>
+                    <li><a href="#">Kids</a></li>
+                    <li><a href="#">Equipment</a></li>
+                    <li><a href="#">Sale</a></li>
+                    <div class="display-menu">
+                        <div class="display-content"></div>
+                    </div>
+                </ul>
+                <div class="search-bar">
+                    <a href="#" class="HeaderIcon" id="searchIcon"><img src="../resources/images/search.png"
+                            alt="Search Icon"></a>
+                    <input type="text" name="search" placeholder="Search" id="mainSearchInput">
+                </div>
+                <div class="icons">
+                    <a href="favourite.html" class="HeaderIcon"><img src="../resources/images/heart.png" alt="Heart Icon"></a>
+                    <a href="bag.html" class="HeaderIcon"><img src="../resources/images/bag.png" alt="Bag Icon"></a>
+                </div>
+            </div>
+        </div>
+        <div class="transparent"></div>
+    </header>
+    <main>
+        <div class="upper">
+            <h1>Shop Best Offers</h1>
+            <!-- <div class="settings">
+                <span>Hide Filters</span>
+                <img src="../resources/images/settings.png" alt="Settings Icon">
+                <span>Sort By</span>
+                <img src="../resources/images/sort.png" alt="Arrow">
+            </div> -->
+        </div>
+        <div class="lower">
+            <div class="side">
+                <div class="first">
+                    <input type="text" placeholder="Search brand...">
+                    <ul id="brandsList">
+                    </ul>
+                </div>
+                <div class="otherFilters">
+                    <hr>
+                    <div class="filter" name="genderFilter">
+                        <span>Gender</span>
+                        <img src="../resources/images/sort.png" alt="Arrow">
+                    </div>
+                    <div class="uncover" id="genderFilter">
+                        <div class="option">
+                            <input type="checkbox" id="men" name="Male" value="men">
+                            <label for="men">Men</label>
+                        </div>
+                        <div class="option">
+                            <input type="checkbox" id="women" name="Female" value="women">
+                            <label for="women">Women</label>
+                        </div>
+                        <div class="option">
+                            <input type="checkbox" id="unisex" name="Unisex" value="unisex">
+                            <label for="unisex">Unisex</label>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="filter" name="saleFilter">
+                        <span>Sale & Offers</span>
+                        <img src="../resources/images/sort.png" alt="Arrow">
+                    </div>
+                    <div class="uncover" id="saleFilter">
+                        <div class="option">
+                            <input type="checkbox" id="10" name="10" value="10">
+                            <label for="10">10%</label>
+                        </div>
+                        <div class="option">
+                            <input type="checkbox" id="20" name="20" value="20">
+                            <label for="20">20%</label>
+                        </div>
+                        <div class="option">
+                            <input type="checkbox" id="30" name="30" value="30">
+                            <label for="30">30%</label>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="filter" name="colorFilter">
+                        <span>Color</span>
+                        <img src="../resources/images/sort.png" alt="Arrow">
+                    </div>
+                    <div class="uncover" id="colorFilter">
+                        <div class="color-option">
+                            <div class="colorBlock" id="Black">
+                                <div class="circle" style="background-color: black;"></div>
+                                <label for="circle">Black</label>
+                            </div>
+                            <div class="colorBlock" id="Blue">
+                                <div class="circle" style="background-color: #1790C8;"></div>
+                                <label for="circle">Blue</label>
+                            </div>
+                            <div class="colorBlock" id="Yellow">
+                                <div class="circle" style="background-color: #FED533;"></div>
+                                <label for="circle">Yellow</label>
+                            </div>
+                        </div>
+                        <div class="color-option">
+                            <div class="colorBlock" id="Orange">
+                                <div class="circle" style="background-color: #F36B26;"></div>
+                                <label for="circle">Orange</label>
+                            </div>
+                            <div class="colorBlock" id="Pink">
+                                <div class="circle" style="background-color: #F0728F;"></div>
+                                <label for="circle">Pink</label>
+                            </div>
+                            <div class="colorBlock" id="White">
+                                <div class="circle" id ="wh" style="background-color: #fff; border: 1px solid #e5e5e5"></div>
+                                <label for="circle">White</label>
+                            </div>
+                        </div>
+                        <div class="color-option">
+                            <div class="colorBlock" id="Purple">
+                                <div class="circle" style="background-color: #8D429F;"></div>
+                                <label for="circle">Purple</label>
+                            </div>
+                            <div class="colorBlock" id="Red">
+                                <div class="circle" style="background-color: #E7352B;"></div>
+                                <label for="circle">Red</label>
+                            </div>
+                            <div class="colorBlock" id="Grey">
+                                <div class="circle" style="background-color: #aaaaaa;"></div>
+                                <label for="circle">Grey</label>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="filter" name="priceFilter">
+                        <span>Shop by Price</span>
+                        <img src="../resources/images/sort.png" alt="Arrow">
+                    </div>
+                    <div class="uncover" id="priceFilter">
+                        <div class="option">
+                            <input type="checkbox" id="0-25" name="0-25" value="0-25">
+                            <label for="0-25">$0 - $25</label>
+                        </div>
+                        <div class="option">
+                            <input type="checkbox" id="25-50" name="25-50" value="25-50">
+                            <label for="25-50">$25 - $50</label>
+                        </div>
+                        <div class="option">
+                            <input type="checkbox" id="50-100" name="50-100" value="50-100">
+                            <label for="50-100">$50 - $100</label>
+                        </div>
+                        <div class="option">
+                            <input type="checkbox" id="100-150" name="100-150" value="100-150">
+                            <label for="100-150">$100 - $150</label>
+                        </div>
+                        <div class="option">
+                            <input type="checkbox" id=">150" name=">150" value=">150">
+                            <label for=">150">Over $150</label>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="filter" name="sportFilter">
+                        <span>Sport & Activities</span>
+                        <img src="../resources/images/sort.png" alt="Arrow">
+                    </div>
+                    <div class="uncover" id="sportFilter">
+                        <div class="option">
+                            <input type="checkbox" id="running" name="Running" value="running">
+                            <label for="running">Running</label>
+                      </div>
+                      <div class="option">
+                            <input type="checkbox" id="football" name="Football" value="football">
+                            <label for="football">Football</label>
+                      </div>
+                      <div class="option">
+                            <input type="checkbox" id="basketball" name="Basketball" value="basketball">
+                            <label for="basketball">Basketball</label>
+                      </div>
+                      <div class="option">
+                            <input type="checkbox" id="volleyball" name="Volleyball" value="volleyball">
+                            <label for="volleyball">Volleyball</label>
+                      </div>
+                      <div class="option">
+                            <input type="checkbox" id="tennis" name="Tennis" value="tennis">
+                            <label for="tennis">Tennis</label>
+                      </div>
+                      <div class="option">
+                            <input type="checkbox" id="cycling" name="Cycling" value="cycling">
+                            <label for="cycling">Cycling</label>
+                      </div>
+                      <div class="option">
+                            <input type="checkbox" id="hiking" name="Hiking" value="hiking">
+                            <label for="hiking">Hiking</label>
+                      </div>
+                      <div class="option">
+                            <input type="checkbox" id="swimming" name="Wwimming" value="swimming">
+                            <label for="swimming">Swimming</label>
+                      </div>
+                      <div class="option">
+                            <input type="checkbox" id="baseball" name="Baseball" value="baseball">
+                            <label for="baseball">Baseball</label>
+                      </div>
+                      <div class="option">
+                            <input type="checkbox" id="rugby" name="Rugby" value="rugby">
+                            <label for="rugby">Rugby</label>
+                      </div>
+                      <div class="option">
+                            <input type="checkbox" id="golf" name="Golf" value="golf">
+                            <label for="golf">Golf</label>
+                      </div>
+                      <div class="option">
+                            <input type="checkbox" id="hockey" name="Hockey" value="hockey">
+                            <label for="hockey">Hockey</label>
+                      </div>
+                      <div class="option">
+                            <input type="checkbox" id="boxing" name="Boxing" value="boxing">
+                            <label for="boxing">Boxing</label>
+                      </div>
+                      <div class="option">
+                            <input type="checkbox" id="badminton" name="Badminton" value="badminton">
+                            <label for="badminton">Badminton</label>
+                      </div>                      
+                    </div>
+                    <hr>
+                    <div class="filter" name="teamFilter">
+                        <span>Team</span>
+                        <img src="../resources/images/sort.png" alt="Arrow">
+                    </div>
+                    <div class="uncover" id="teamFilter">
+                        <div class="option">
+                            <input type="checkbox" id="real-madrid" name="Real Madrid" value="real-madrid">
+                            <label for="real-madrid">Real Madrid</label>
+                      </div>
+                      <div class="option">
+                            <input type="checkbox" id="barcelona" name="Barcelona" value="barcelona">
+                            <label for="barcelona">Barcelona</label>
+                      </div>
+                      <div class="option">
+                        <input type="checkbox" id="manchester-city" name="Manchester City" value="manchester-city">
+                        <label for="manchester-city">Manchester City</label>
+                  </div>
+                    </div>
+                    <hr>
+                    <div class="filter" name="sizeFilter">
+                        <span>Size</span>
+                        <img src="../resources/images/sort.png" alt="Arrow">
+                    </div>
+                    <div class="uncover" id="sizeFilter">    
+                    </div>
+                    <hr>
+                </div>
+            </div>
+            <div class="products"></div>
+        </div>
+        <div class="counter">
+            <div></div>
+        </div>
+    </main>
+    <footer>
+        <div class="info">
+            <div class="main">
+                <a href="findStore.html">FIND A STORE</a>
+                <a href="working.html">GIFT CARDS</a>
+                <a href="#">DQ X REAL MADRID</a>
+            </div>
+            <div class="help">
+                <a href="working.html">HELP</a>
+                <a href="working.html">Get Help</a>
+                <a href="working.html">Order Status</a>
+                <a href="working.html">Shipping & Delivery</a>
+                <a href="working.html">Returns</a>
+                <a href="working.html">Payment Options</a>
+                <a href="working.html">Contact Us</a>
+            </div>
+            <div class="company">
+                <a href="working.html">COMPANY</a>
+                <a href="working.html">About DQ</a>
+                <a href="working.html">News</a>
+                <a href="working.html">Investors</a>
+                <a href="working.html">Misson</a>
+                <a href="working.html">Goals</a>
+            </div>
+            <div class="discounts">
+                <a href="working.html">PROMOTIONS & DISCOUNTS</a>
+                <a href="working.html">Student</a>
+                <a href="working.html">Military</a>
+                <a href="working.html">Teacher</a>
+                <a href="working.html">First Responders & Medical Professionals</a>
+                <a href="working.html">Birthday</a>
+            </div>
+            <div class="links">
+                <a href="https://x.com" target="_blank"><img src="../resources/images/twitter.png" alt="Twitter"></a>
+                <a href="https://www.facebook.com" target="_blank"><img src="../resources/images/facebook.png"
+                        alt="Facebook"></a>
+                <a href="https://www.tiktok.com" target="_blank"><img src="../resources/images/TikTok.png"
+                        alt="TikTok"></a>
+                <a href="https://www.instagram.com" target="_blank"><img src="../resources/images/instagram.png"
+                        alt="Instagram"></a>
+            </div>
+        </div>
+        <div class="other">
+            <span>© 2024 DQ, Inc. All Rights Reserved</span>
+            <div class="terms">
+                <a href="working.html">Terms of Sale</a>
+                <a href="working.html">Terms of Use</a>
+                <a href="working.html">DQ Privacy Policy</a>
+            </div>
+        </div>
+    </footer>
+    <script src="../scripts/defaultStyles.js"></script>
+    <script src="../scripts/shop.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,27 @@
+Product -
+Id
+Name
+Category
+Description
+Short Description
+Brand
+Sport
+Gender
+Kids
+Sale
+Price
+Color
+Size
+Fit
+Team
+
+Brand - Nike, Adidas, Puma, Under Armour, Reebok, Asics, New Balance, Lacoste, The North Face, Columbia, Montrail, Lotto, Umbro, Everlast, Specialized, Giant, Merrel, Brooks, Saucony, Skechers, Salomon
+Category - Running, Football, Basketball, VoleyBall, Tennis, Cycling, Hiking, Swimming, Baseball, Rugby, Golf, Hockey, Boxing, Badminton
+Gender - Male / Female / Unisex;
+Kids - Yes / No;
+Sale - 10%, 15%, 20%, 30%;
+Price - 0-50, 50-100, 100-150, over 150;
+Color - Black, White, Multi...
+Size - S,M,L, 41,42...
+Fit - Regular, Extra Wide
+Team - Real Madrid, Barcelona, Los Angeles Lakers, Chicago Bulls, Ferrari, Zenit Kazan

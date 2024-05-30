@@ -1,0 +1,358 @@
+main {
+    margin-top: 20px;
+}
+
+.upper {
+    width: 100dvw;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 35px;
+}
+
+.upper h1 {
+    margin-left: 50px;
+    font-size: 24px;
+}
+
+img[alt="Settings Icon"]{
+    width: 20px;
+    margin-right: 32px;
+}
+
+.upper .settings {
+    margin-right: 75px;
+}
+
+.upper .settings span {
+    margin-right: 10px;
+}
+
+.lower {
+    display: flex;
+    width: 100dvw;
+    justify-content: space-between;
+}
+
+.side {
+    margin-left: 50px;
+    width: 215px;
+}
+
+.side input {
+    width: 185px;
+    height: 30px;
+    border: 1px solid #aaaaaa;
+    border-radius: 20px;
+    padding-left: 15px;
+    outline-color: #757575;
+    color: #757575;
+    font-size: 14px;
+}
+
+.side input::placeholder{
+    font-size: 13px;
+    color: #aaaaaa;
+    font-family: CodecPro-News, 'Serif';
+}
+
+.side ul li {
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.first {
+    height: 415px;
+    overflow-y: auto;
+}
+
+.otherFilters {
+    margin-top: 16px;
+}
+
+.otherFilters hr {
+    margin: 22px 0;
+    color: #aaaaaa;
+}
+
+.filter {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.uncover {
+    display: none;
+    height: max-content;
+    margin-top: 19px;
+}
+
+.option, .color-option{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.option input {
+    width: 20px;
+    margin-right: 10px;
+    accent-color: #9D4DFF;
+}
+
+.option label:hover{
+    color: #aaaaaa;
+}
+
+.circle {
+    width: 28px !important;
+    height: 28px !important;
+    border-radius: 30px;
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle img {
+    width: 25px;
+}
+
+label[for="circle"] {
+    font-size: 14px;
+}
+
+.color-option {
+    margin: 0 0 20px 20px;
+}
+
+.color-option:last-child {
+    margin-bottom: 0;
+}
+
+.colorBlock {
+    width: 45px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.size-option {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+#sizeFilter {
+    margin-left: 1px;
+}
+
+.size-option button {
+    width: 28%;
+    height: 36px;
+    border-radius: 7px;
+    border: 2px solid #e5e5e5;
+}
+
+#twoButtons button{
+    width: 46%;
+}
+
+#oneButton button {
+    width: 100%;
+}
+
+.size-option button:hover {
+    border-color: #111;
+}
+
+.products {
+    width: 1536px;
+    height: max-content;
+    margin-right: 70px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+
+.product {
+    width: 500px;
+    height: 608px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: left;
+    margin-top: 20px;
+}
+
+.products > :nth-child(-n + 3) {
+    margin-top: 0;
+}
+
+.product img {
+    width: 500px;
+    height: 500px;
+    object-fit: cover;
+}
+
+.product h6:first-of-type{
+    margin-top: 20px;
+}
+
+.product span{
+    margin-top: 10px;
+    color: #aaaaaa;
+}
+
+.product h6:last-of-type {
+    margin-top: 10px;
+}
+
+.counter {
+    width: 1536px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 0 30px 240px;
+}
+
+.counter div:first-child {
+    width: 100%;
+    height: 2px;
+    background-color: #eee;
+}
+
+.counter .circles .page-circle {
+    width: 35px;
+    height: 35px;
+    border-radius: 40px;
+    background-color: #eee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 15px 0 0;
+    cursor: pointer;
+}
+
+.counter .circles .page-circle:last-child {
+    margin: 0;
+}
+
+.counter .circles .page-circle:first-child {
+    margin-left: 20px;
+}
+
+.circles {
+    display: flex;
+}
+
+.counter .circles .page-circle span {
+   background-color: #eee;
+}
+
+.selectedBrand {
+    color: #9D4DFF;
+}
+
+.selected-size {
+    background-color: #e5e5e5 !important;
+}
+
+@media (max-width: 430px) {
+    .side {
+        display: none;
+    }
+
+    .upper {
+        flex-direction: column;
+    }
+
+    .upper hr {
+        margin: 30px 0 20px;
+    }
+
+    .upper h1, .upper div {
+        margin-left: 25px;
+    }
+
+    .upper div span {
+        color: #aaaaaa;
+    }
+
+    .upper div button span {
+        color: #111;
+    }
+
+    .upper div button img {
+        width: 20px;
+    }
+
+    .upper div button  {
+        padding: 10px;
+        outline: none;
+        border: 1px solid #aaaaaa;
+        border-radius: 40px;
+    }
+
+    .upper div {
+        width: 364px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .product h6, .product span{
+        font-size: 14px;
+    }
+
+    .product img{
+        width: 200px;
+        height: 200px;
+        object-fit: cover;
+    }
+
+    .product {
+        width: max-content;
+        height: max-content;
+    }
+
+    .products {
+        grid-template-columns: repeat(2, 1fr);
+        margin: 0 0 0 5px;
+    }
+
+    .counter {
+        width: 420px;
+        margin: 30px 10px 30px 0;
+    }
+
+    .cover-filters {
+        width: 100dvw;
+        height: max-content;
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .cover-filters img:first-child {
+        width: 25px;
+    }
+
+    #filtersDiv {
+        height: max-content;
+        display: flex;
+        flex-direction: column;
+        background-color: #fff;
+        margin: 50px 0 0;
+    }
+
+    #filterDiv .cancelButton {
+        width: 35px;
+    }
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome Back</title>
+    <link rel="icon" type="image/x-icon" href="../resources/images/dq_Logo.ico">
+    <link rel="stylesheet" href="../styles/login.css">
+    <link rel="stylesheet" href="../styles/default.css">
+    <style>
+        body,
+        html {
+            overflow: hidden;
+        }
+
+        @media (max-width: 430px) {
+
+            .options img,
+            .options a:first-child {
+                display: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <img src="../resources/images/dq_logo.png" alt="DQ Logo" id="logo">
+        <div class="content">
+            <div class="options">
+                <a href="signUp.html">JOIN</a>
+                <img src="../resources/images/line.png" alt="Vertical Line">
+                <a href="#">SIGN IN</a>
+            </div>
+            <div class="info">
+                <label for="login">NICKNAME OR EMAIL:</label>
+                <input type="text" name="login">
+                <label for="pass">PASSWORD:</label>
+                <input type="password" name="pass">
+                <div class="buttons">
+                    <button>SIGN IN</button>
+                    <button>Forgot Password?</button>
+                </div>
+            </div>
+            <div class="or">
+                <span>OR SIGN IN WITH...</span>
+                <div class="links">
+                    <a href="#"><img src="../resources/images/google.png" alt="Google Logo"><span>GOOGLE</span></a>
+                    <a href="#"><img src="../resources/images/apple.png" alt="Apple Logo"><span>APPLE</span></a>
+                    <a href="#"><img src="../resources/images/facebook1.png"
+                            alt="Facebook Logo"><span>FACEBOOK</span></a>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="../scripts/login.js"></script>
+</body>
+
+</html>

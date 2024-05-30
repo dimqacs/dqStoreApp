@@ -1,0 +1,66 @@
+@font-face {
+    font-family: CodecPro-Bold;
+    src: url(../resources/fonts/CodecPro-Bold.ttf);
+}
+
+@font-face {
+    font-family: CodecPro-Ultra;
+    src: url(../resources/fonts/CodecPro-Ultra.ttf);
+}
+
+@font-face {
+    font-family: CodecPro-ExtraBold;
+    src: url(../resources/fonts/CodecPro-ExtraBold.ttf);
+}
+
+@font-face {
+    font-family: CodecPro-LightItalic;
+    src: url(../resources/fonts/CodecPro-LightItalic.ttf);
+}
+
+@font-face {
+    font-family: CodecPro-News;
+    src: url(../resources/fonts/CodecPro-News.ttf);
+}
+
+@font-face {
+    font-family: CodecPro-ExtraBoldItalic;
+    src: url(../resources/fonts/CodecPro-ExtraBoldItalic.ttf);
+}
+
+@font-face {
+    font-family: Poppins-Black;
+    src: url(../resources/fonts/Poppins-Black.ttf);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    color: #111111;
+    background-color: #fff;
+    font-size: 16px;
+    font-family: CodecPro-Bold, "Serif";
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #757575;
+    border-radius: 10px;
+    border: 2px solid transparent;
+    background-clip: content-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    overflow-x: hidden;
+}
